@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" id="num">
+<button onclick="A()">Result</button>
+</body>
+</html>
+<script>
+    function A() {
+        let a = document.getElementById('num').value;
+        let i = 2
+        let check = true
+        if (a % 2 == 0) {
+            document.write("chia het cho 2");
+        } else {
+            for (i = 2; i <= a / 2; i++) {
+                if (a % i == 0) {
+                    check = false;
+                }
+            }
+            if (check) {
+                document.write("la so nguyen to")
+            } else {
+                document.write("error")
+            }
+        }
+    }
+</script>
