@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<input type="text" id="num">
+<button onclick="A()">CALCULATE</button>
+</body>
+</html>
+<script>
+    function A() {
+        let a = parseInt(document.getElementById('num').value);
+        let b;
+        if (a % 100 == 0){
+            b = a / 100;
+        } else {
+            b = (a / 100) + 1;
+        }
+        c=parseInt(b)
+        document.write(c)}
+</script>
