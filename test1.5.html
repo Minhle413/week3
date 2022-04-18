@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table border="1">
+   <tr>
+       <td>Number 1:</td>
+       <td>
+           <input type="number" id="num1">
+       </td>
+   </tr>
+    <tr>
+        <td>Number 2:</td>
+        <td>
+            <input type="number" id="num2">
+        </td>
+    </tr>
+    <tr>
+        <td>Number 3:</td>
+        <td>
+            <input type="number" id="num3">
+        </td>
+    </tr>
+    <tr>
+        <td>Tam Giac</td>
+        <td>
+            <input type="text" id="tamgiac">
+        </td>
+        <td>
+            <button onclick="A()">Check</button>
+        </td>
+    </tr>
+    <tr>
+        <td>Tam Giac Can</td>
+        <td>
+            <input type="text" id="tamgiaccan">
+        </td>
+        <td>
+            <button onclick="B()">Check</button>
+        </td>
+    </tr>
+    <tr>
+        <td>Tam Giac Deu</td>
+        <td>
+            <input type="text" id="tamgiacdeu">
+        </td>
+        <td>
+            <button onclick="C()">Check</button>
+        </td>
+    </tr>
+    <tr>
+        <td>Tam Giac Vuong</td>
+        <td>
+            <input type="text" id="tamgiacvuong">
+        </td>
+        <td>
+            <button onclick="D()">Check</button>
+        </td>
+    </tr>
+</table>
+</body>
+</html>
+<script>
+    function A(){
+        let a = document.getElementById('num1').value;
+        let b = document.getElementById('num2').value;
+        let c = document.getElementById('num3').value;
+        let d = a + b
+        if (d>c){
+            document.getElementById('tamgiac').value=("True")
+        }else{
+            document.getElementById('tamgiac').value=("False")
+        }
+    }
+    function B  (){
+        let a = document.getElementById('num1').value;
+        let b = document.getElementById('num2').value;
+        let c = document.getElementById('num3').value;
+        if (a==b || b==c || c==a){
+            document.getElementById('tamgiaccan').value=("True")
+        }else{
+            document.getElementById('tamgiaccan').value=("False")
+        }
+    }
+    function C  (){
+        let a = document.getElementById('num1').value;
+        let b = document.getElementById('num2').value;
+        let c = document.getElementById('num3').value;
+        if (a==b && b==c && c==a){
+            document.getElementById('tamgiacdeu').value=("True")
+        }else{
+            document.getElementById('tamgiacdeu').value=("False")
+        }
+    }
+    function D  (){
+        let a = document.getElementById('num1').value;
+        let b = document.getElementById('num2').value;
+        let c = document.getElementById('num3').value;
+        let e = a**2
+        let g = b**2
+        let h = c**2
+        if (e + g == h || e + h == g || h + g == e){
+            document.getElementById('tamgiacvuong').value=("True")
+        }else{
+            document.getElementById('tamgiacvuong').value=("False")
+        }
+    }
+
+</script>
