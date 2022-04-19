@@ -5,23 +5,25 @@
     <title>Title</title>
 </head>
 <body>
-<input type="text" id="txtValue">
-<input type="button" id="btnAdd" value="Add" onclick="add_element_to_array();">
-<input type="button" id="btnDisplay" value="Display" onclick="display_array();">
+<input type="text" id="txtValue"/>
+<input type="button" id="btnAdd" value="Add" onclick="add_element_to_array();"/>
+<input type="button" id="btnDisplay" value="Display" onclick="display_array();"/>
 <div id="result"></div>
 </body>
 </html>
 <script>
+    let x = 0
+    let array =Array()
     function add_element_to_array() {
-        Array[x] = document.getElementById("txtValue").value;
-        alert("Element: " + Array[x] + " Added at index " + x);
+        array[x] = document.getElementById("txtValue").value;
+        alert("Element: " + array[x] + " Added at index " + x);
         x++;
         document.getElementById("txtValue ").value = "";
     }
     function display_array() {
         let e = "<hr/>";
-        for (let i = 0; i < Array.length; i++) {
-            e += "Element " + i + " = " + Array[i] + "<br/>";
+        for (let i = 0; i < array.length; i++) {
+            e += "Element " + i + " = " + array[i] + "<br/>";
         }
         document.getElementById("result").innerHTML = e;
     }
