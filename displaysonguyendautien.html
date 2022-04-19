@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    let count=0
+    let sobatdau = 2;
+    while (count<20 ){
+        let check = true
+        for (let i = 2; i <= sobatdau / 2; i++) {
+            if (sobatdau % i == 0) {
+                check = false;
+            }
+        }
+        if (check) {
+            console.log(sobatdau)
+            count++;
+        }
+        sobatdau++;
+    }
+
+
+
+</script>
+</body>
+</html>
