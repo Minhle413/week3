@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Insert number:</p>
+<input type="number" id="num">
+<button onclick="A()">Evaluate</button>
+</body>
+</html>
+<script>
+
+    function A() {
+        let a = [1, 2, 3, 4, 12, 17, 8, 11, 21, 5]
+        let check = false
+        let v = document.getElementById('num').value
+        for(let i = 0; i< a.length; i++){
+            if(a[i]===v){
+                check=true
+                break;
+            }
+        }
+if(check==true){
+    console.log("no value matched ")
+}else{
+    console.log("matched ")
+}
+
+    }
+
+</script>

@@ -5,16 +5,17 @@
     <title>Title</title>
 </head>
 <body>
+
+</body>
+</html>
 <script>
     let a = [1,2,3,4,12,17,8,11,21,5]
     let x = 0
-    count=0
+    let max=0
     for(;x<a.length;x++){
-        if(a[x]>=10){
-            console.log(a[x]);
-            }
+        if(a[x]>max){
+            max=a[x]
+        }
+        console.log(max)
     }
-
 </script>
-</body>
-</html>
